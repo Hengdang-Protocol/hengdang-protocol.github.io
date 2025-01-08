@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hengdang</title>
+    <link rel="stylesheet" href="image-alt.css" />
+    <script src="tailwind.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#0A0A0F",
+              accent: "#FFD75F",
+            },
+            fontFamily: {
+              syne: ["Syne", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      @font-face {
+        font-family: "Syne";
+        font-style: normal;
+        font-weight: 400 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/syne/v22/8vIH7w4qzmVxm2BL9A.woff2) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+          U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+          U+FFFD;
+      }
+    </style>
+  </head>
+  <body class="bg-dark font-syne text-white">
+    <!-- Header -->
+    <header class="container mx-auto px-4 py-8">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <img src="/assets/logo.svg" alt="Logo" class="h-12 w-12" />
+        <button
+          class="px-6 py-2 border border-white rounded-full text-sm uppercase hover:bg-white/20 transition-colors flex items-center gap-2"
+        >
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.328-.525 2.107c-.345-.087-.705-.167-1.064-.25l.526-2.127-1.32-.33-.54 2.165c-.285-.067-.565-.132-.84-.2l-1.815-.45-.35 1.407s.974.225.955.236c.535.136.63.486.615.766l-1.477 5.92c-.075.18-.24.45-.614.35.015.02-.96-.24-.96-.24l-.66 1.51 1.71.426.93.242-.54 2.19 1.32.327.54-2.17c.36.1.705.19 1.05.273l-.51 2.154 1.32.33.545-2.19c2.24.427 3.93.257 4.64-1.774.57-1.637-.03-2.58-1.217-3.196.854-.193 1.5-.76 1.68-1.93h.01zm-3.01 4.22c-.404 1.64-3.157.75-4.05.53l.72-2.9c.896.23 3.757.67 3.33 2.37zm.41-4.24c-.37 1.49-2.662.735-3.405.55l.654-2.64c.744.18 3.137.524 2.75 2.084v.006z"
+            />
+          </svg>
+          <span>Support</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main class="container mx-auto px-4 mt-16 md:mt-32">
+      <div class="max-w-[85%] mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl leading-tight mb-8">
+          end-to-end encrypted
+          <br>
+          cloud file storage
+          <br>
+          and
+          collaboration protocol
+        </h1>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-12">
+          hengdang is an open protocol for storing your data in an end to end encrypted manner,
+          where even your metadata is hidden, in a third part cloud storage, with file sharing and
+          collaborative capabilities
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <button
+            class="px-8 py-3 bg-accent text-dark rounded-full text-sm uppercase hover:bg-accent/90 transition-colors"
+          >
+            Checkout the apps
+          </button>
+          <button
+            class="px-8 py-3 border border-white rounded-full text-sm uppercase hover:bg-white/10 transition-colors"
+          >
+            Protocol Specification
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Features -->
+    <section class="container mx-auto px-4 mt-32">
+      <div class="max-w-[85%] mx-auto">
+        <h2 class="text-4xl text-accent text-center mb-16">features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Feature cards -->
+          <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
+            <img src="/assets/icons/lock.svg" alt="Encryption" class="w-8 h-8 mb-4" />
+            <h3 class="text-accent text-xl mb-2">end to end encrypted</h3>
+            <p class="text-gray-300">all the files and metadata are e2ee on the user's computer</p>
+          </div>
+
+          <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
+            <img src="/assets/icons/server.svg" alt="Self Hostable" class="w-8 h-8 mb-4" />
+            <h3 class="text-accent text-xl mb-2">self hostable</h3>
+            <p class="text-gray-300">host your own storage servers, or choose from a marketplace</p>
+          </div>
+
+          <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
+            <img src="/assets/icons/share.svg" alt="File Sharing" class="w-8 h-8 mb-4" />
+            <h3 class="text-accent text-xl mb-2">file sharing</h3>
+            <p class="text-gray-300">
+              share files with other users, on any servers, by using their public keys
+            </p>
+          </div>
+
+          <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
+            <img src="/assets/icons/collaboration.svg" alt="Collaboration" class="w-8 h-8 mb-4" />
+            <h3 class="text-accent text-xl mb-2">collaboration apps</h3>
+            <p class="text-gray-300">
+              collaboratively work on files such as docs or sheets, while preserving privacy
+            </p>
+          </div>
+
+          <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
+            <img src="/assets/icons/network.svg" alt="Interoperable" class="w-8 h-8 mb-4" />
+            <h3 class="text-accent text-xl mb-2">interoperable</h3>
+            <p class="text-gray-300">
+              apps and different servers all work with each other, on all platforms
+            </p>
+          </div>
+
+          <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
+            <img src="/assets/icons/code.svg" alt="FOSS" class="w-8 h-8 mb-4" />
+            <h3 class="text-accent text-xl mb-2">open protocol</h3>
+            <p class="text-gray-300">
+              the protocol is open for anyone to build upon. the reference implementations are foss
+              as well
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is Hengdang -->
+    <section class="container mx-auto px-4 mt-32">
+      <div class="max-w-[85%] mx-auto">
+        <div class="text-center mb-16">
+          <p class="text-xl tracking-wide mb-4">value proposition</p>
+          <h2 class="text-5xl md:text-7xl mb-12">what is hengdang</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 text-left">
+            <div>
+              <h3 class="text-2xl text-accent mb-4">Section 1</h3>
+              <p class="text-gray-300">
+                <ul class="list-disc space-y-4 text-gray-300 pl-5">
+                  <li>
+                    experience unparalleled privacy with client-side encryption, ensuring that your
+                    data remains private and secure. Neither the service providers nor third parties
+                    can access your files without your explicit permission.
+                  </li>
+                  <li>
+                    use any client app on the web, mobile or desktop, and choose any server as your
+                    storage provider. everything is interoperable due to hengdang
+                  </li>
+                </ul>
+              </p>
+            </div>
+            <div>
+              <h3 class="text-2xl text-accent mb-4">Section 2</h3>
+              <p class="text-gray-300">
+                <ul class="list-disc space-y-4 text-gray-300 pl-5">
+                  <li>
+                    experience unparalleled privacy with client-side encryption, ensuring that your
+                    data remains private and secure. Neither the service providers nor third parties
+                    can access your files without your explicit permission.
+                  </li>
+                  <li>
+                    use any client app on the web, mobile or desktop, and choose any server as your
+                    storage provider. everything is interoperable due to hengdang
+                  </li>
+                </ul>
+              </p>
+            </div>
+            <div>
+              <h3 class="text-2xl text-accent mb-4">Section 3</h3>
+              <p class="text-gray-300">
+                <ul class="list-disc space-y-4 text-gray-300 pl-5">
+                  <li>
+                    experience unparalleled privacy with client-side encryption, ensuring that your
+                    data remains private and secure. Neither the service providers nor third parties
+                    can access your files without your explicit permission.
+                  </li>
+                  <li>
+                    use any client app on the web, mobile or desktop, and choose any server as your
+                    storage provider. everything is interoperable due to hengdang
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Using -->
+    <section class="container mx-auto px-4 mt-32">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl text-accent text-center mb-16">start using hengdang</h2>
+        <div class="relative">
+          <button
+            class="absolute top-1/2 -left-4 md:-left-12 transform -translate-y-1/2 bg-dark rounded-full p-4 hover:bg-white/10 transition-colors"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              class="rotate-180"
+            >
+              <path
+                d="M9 5l7 7-7 7"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-[#1A1A1A] rounded-3xl p-8 text-center hover:bg-[#222222] transition-colors"
+            >
+              <h3 class="text-2xl mb-4 text-accent">desktop app</h3>
+              <p class="mb-8 text-gray-300">
+                native desktop app for windows, macOS, and linux. seamlessly integrates with your
+                file system for automated syncing.
+              </p>
+              <img
+                src="/assets/screenshots/desktop.png"
+                alt="Desktop app screenshot"
+                class="w-full rounded-lg"
+              />
+            </div>
+
+            <div
+              class="bg-[#1A1A1A] rounded-3xl p-8 text-center hover:bg-[#222222] transition-colors"
+            >
+              <h3 class="text-2xl mb-4 text-accent">web app</h3>
+              <p class="mb-8 text-gray-300">
+                access your files from any browser. no installation needed, just visit the web app
+                and start using.
+              </p>
+              <img
+                src="/assets/screenshots/web.png"
+                alt="Web app screenshot"
+                class="w-full rounded-lg"
+              />
+            </div>
+
+            <div
+              class="bg-[#1A1A1A] rounded-3xl p-8 text-center hover:bg-[#222222] transition-colors"
+            >
+              <h3 class="text-2xl mb-4 text-accent">mobile app</h3>
+              <p class="mb-8 text-gray-300">
+                take your files on the go with our mobile apps for iOS and android. full features in
+                your pocket.
+              </p>
+              <img
+                src="/assets/screenshots/mobile.png"
+                alt="Mobile app screenshot"
+                class="w-full rounded-lg"
+              />
+            </div>
+          </div>
+
+          <button
+            class="absolute top-1/2 -right-4 md:-right-12 transform -translate-y-1/2 bg-dark rounded-full p-4 hover:bg-white/10 transition-colors"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path
+                d="M9 5l7 7-7 7"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="text-center mt-12">
+          <button
+            class="px-12 py-3 bg-accent text-dark rounded-full text-sm uppercase hover:bg-accent/90 transition-colors"
+          >
+            View All
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section class="mt-32 border-t border-white/20">
+      <div class="container mx-auto px-4 py-16 text-center">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex items-center justify-center gap-2 mb-8">
+            <p class="text-xl">ready to take action?</p>
+            <img src="/assets/icons/discord.svg" alt="Discord" class="w-8 h-8" />
+          </div>
+          <h2 class="text-5xl md:text-7xl mb-8 flex items-center justify-center">
+            join our community
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              class="ml-4"
+            >
+              <path
+                d="M7 17l10-10M17 17V7H7"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-4 py-16 border-t border-white/10">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Organization Section -->
+          <div class="h-full flex flex-col">
+            <div class="flex-1">
+              <h3 class="text-xl font-medium text-accent mb-6">Organization</h3>
+              <div class="flex items-start gap-4 mb-6">
+                <img src="/assets/logo-large.svg" alt="Unsigned Labs Logo" class="h-10 w-10" />
+                <div>
+                  <h4 class="text-lg font-medium mb-2">Unsigned Labs</h4>
+                  <p class="text-gray-300">
+                    Building tools for digital self-sovereignty. Hengadang protocol is one of the
+                    many things we are working on.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="w-full px-6 py-3 border border-white rounded-xl flex items-center justify-center gap-2 hover:bg-white/10 transition-colors"
+            >
+              <img src="/assets/icons/nostr.svg" alt="Nostr" class="w-5 h-5" />
+              <span>Follow on Nostr</span>
+            </button>
+          </div>
+
+          <!-- Resources Section -->
+          <div>
+            <h3 class="text-xl font-medium text-accent mb-6">Resources</h3>
+            <ul class="space-y-4 text-gray-300">
+              <li>
+                <a href="#" class="hover:text-accent transition-colors">Protocol Specification</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors">Documentation</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors">Desktop Apps</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors">Mobile Apps</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors">Web Client</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors">GitHub</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Donate Section -->
+          <div class="h-full flex flex-col">
+            <div class="flex-1">
+              <h3 class="text-xl font-medium text-accent mb-6">Support the Project</h3>
+              <p class="text-gray-300 mb-6">
+                Help us build a more private and secure future. Your contributions keep this project
+                independent and growing.
+              </p>
+            </div>
+            <button
+              class="w-full px-6 py-3 bg-[#F7931A] text-white rounded-xl flex items-center justify-center gap-2 hover:bg-[#F7931A]/90 transition-colors"
+            >
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.328-.525 2.107c-.345-.087-.705-.167-1.064-.25l.526-2.127-1.32-.33-.54 2.165c-.285-.067-.565-.132-.84-.2l-1.815-.45-.35 1.407s.974.225.955.236c.535.136.63.486.615.766l-1.477 5.92c-.075.18-.24.45-.614.35.015.02-.96-.24-.96-.24l-.66 1.51 1.71.426.93.242-.54 2.19 1.32.327.54-2.17c.36.1.705.19 1.05.273l-.51 2.154 1.32.33.545-2.19c2.24.427 3.93.257 4.64-1.774.57-1.637-.03-2.58-1.217-3.196.854-.193 1.5-.76 1.68-1.93h.01zm-3.01 4.22c-.404 1.64-3.157.75-4.05.53l.72-2.9c.896.23 3.757.67 3.33 2.37zm.41-4.24c-.37 1.49-2.662.735-3.405.55l.654-2.64c.744.18 3.137.524 2.75 2.084v.006z"
+                />
+              </svg>
+              <span class="text-white font-medium">Support us with Bitcoin</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
