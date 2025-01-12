@@ -40,9 +40,11 @@
     <!-- Header -->
     <header class="container mx-auto px-4 py-8">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <img src="/assets/logo.svg" alt="Logo" class="h-12 w-12" />
-        <button
+        <img src="/assets/logo.svg" alt="Logo" class="h-16 w-16" />
+        <a
           class="px-6 py-2 border border-white rounded-full text-sm uppercase hover:bg-white/20 transition-colors flex items-center gap-2"
+          href="https://geyser.fund/project/hengdang"
+          target="_blank"
         >
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
             <path
@@ -50,7 +52,7 @@
             />
           </svg>
           <span>Support</span>
-        </button>
+        </a>
       </div>
     </header>
 
@@ -59,11 +61,10 @@
       <div class="max-w-[85%] mx-auto text-center">
         <h1 class="text-5xl md:text-7xl leading-tight mb-8">
           end-to-end encrypted
-          <br>
+          <br />
           cloud file storage
-          <br>
-          and
-          collaboration protocol
+          <br />
+          and collaboration protocol
         </h1>
         <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-12">
           hengdang is an open protocol for storing your data in an end to end encrypted manner,
@@ -71,16 +72,25 @@
           collaborative capabilities
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <button
+          <!-- <button
             class="px-8 py-3 bg-accent text-dark rounded-full text-sm uppercase hover:bg-accent/90 transition-colors"
           >
             Checkout the apps
           </button>
-          <button
+          <a
             class="px-8 py-3 border border-white rounded-full text-sm uppercase hover:bg-white/10 transition-colors"
+            href="https://github.com/Hengdang-Protocol/spec"
+            target="_blank"
           >
             Protocol Specification
-          </button>
+          </a> -->
+          <a
+            class="px-8 py-3 bg-accent text-dark rounded-full text-sm uppercase hover:bg-accent/90 transition-colors"
+            href="https://github.com/Hengdang-Protocol/spec"
+            target="_blank"
+          >
+            Protocol Specification
+          </a>
         </div>
       </div>
     </main>
@@ -94,7 +104,9 @@
           <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
             <img src="/assets/icons/lock.svg" alt="Encryption" class="w-8 h-8 mb-4" />
             <h3 class="text-accent text-xl mb-2">end to end encrypted</h3>
-            <p class="text-gray-300">all the files and metadata are e2ee on the user's computer</p>
+            <p class="text-gray-300">
+              all the files and metadata are encrypted on the user's computer
+            </p>
           </div>
 
           <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
@@ -104,18 +116,11 @@
           </div>
 
           <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
-            <img src="/assets/icons/share.svg" alt="File Sharing" class="w-8 h-8 mb-4" />
-            <h3 class="text-accent text-xl mb-2">file sharing</h3>
-            <p class="text-gray-300">
-              share files with other users, on any servers, by using their public keys
-            </p>
-          </div>
-
-          <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
-            <img src="/assets/icons/collaboration.svg" alt="Collaboration" class="w-8 h-8 mb-4" />
+            <img src="/assets/icons/file-pen.svg" alt="Collaboration" class="w-8 h-8 mb-4" />
             <h3 class="text-accent text-xl mb-2">collaboration apps</h3>
             <p class="text-gray-300">
-              collaboratively work on files such as docs or sheets, while preserving privacy
+              share and collaboratively work on files such as docs or sheets, while preserving
+              privacy
             </p>
           </div>
 
@@ -128,11 +133,19 @@
           </div>
 
           <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
-            <img src="/assets/icons/code.svg" alt="FOSS" class="w-8 h-8 mb-4" />
+            <img src="/assets/icons/braces.svg" alt="FOSS" class="w-8 h-8 mb-4" />
             <h3 class="text-accent text-xl mb-2">open protocol</h3>
             <p class="text-gray-300">
               the protocol is open for anyone to build upon. the reference implementations are foss
               as well
+            </p>
+          </div>
+
+          <div class="bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222222] transition-colors">
+            <img src="/assets/icons/key-round.svg" alt="File Sharing" class="w-8 h-8 mb-4" />
+            <h3 class="text-accent text-xl mb-2">your keys, your data</h3>
+            <p class="text-gray-300">
+              be in complete control of your data by holding your keys directly
             </p>
           </div>
         </div>
@@ -142,65 +155,34 @@
     <!-- What is Hengdang -->
     <section class="container mx-auto px-4 mt-32">
       <div class="max-w-[85%] mx-auto">
-        <div class="text-center mb-16">
+        <div class="text-center">
           <p class="text-xl tracking-wide mb-4">value proposition</p>
           <h2 class="text-5xl md:text-7xl mb-12">what is hengdang</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 text-left">
-            <div>
-              <h3 class="text-2xl text-accent mb-4">Section 1</h3>
-              <p class="text-gray-300">
-                <ul class="list-disc space-y-4 text-gray-300 pl-5">
-                  <li>
-                    experience unparalleled privacy with client-side encryption, ensuring that your
-                    data remains private and secure. Neither the service providers nor third parties
-                    can access your files without your explicit permission.
-                  </li>
-                  <li>
-                    use any client app on the web, mobile or desktop, and choose any server as your
-                    storage provider. everything is interoperable due to hengdang
-                  </li>
-                </ul>
-              </p>
-            </div>
-            <div>
-              <h3 class="text-2xl text-accent mb-4">Section 2</h3>
-              <p class="text-gray-300">
-                <ul class="list-disc space-y-4 text-gray-300 pl-5">
-                  <li>
-                    experience unparalleled privacy with client-side encryption, ensuring that your
-                    data remains private and secure. Neither the service providers nor third parties
-                    can access your files without your explicit permission.
-                  </li>
-                  <li>
-                    use any client app on the web, mobile or desktop, and choose any server as your
-                    storage provider. everything is interoperable due to hengdang
-                  </li>
-                </ul>
-              </p>
-            </div>
-            <div>
-              <h3 class="text-2xl text-accent mb-4">Section 3</h3>
-              <p class="text-gray-300">
-                <ul class="list-disc space-y-4 text-gray-300 pl-5">
-                  <li>
-                    experience unparalleled privacy with client-side encryption, ensuring that your
-                    data remains private and secure. Neither the service providers nor third parties
-                    can access your files without your explicit permission.
-                  </li>
-                  <li>
-                    use any client app on the web, mobile or desktop, and choose any server as your
-                    storage provider. everything is interoperable due to hengdang
-                  </li>
-                </ul>
-              </p>
-            </div>
-          </div>
+          <p class="text-gray-300 max-w-4xl mx-auto text-lg leading-relaxed">
+            Hengdang is not an app. It's a protocol using which many apps will be built. We are just
+            getting started, so you won't be able to just install something on your phone or laptop
+            and try it out, yet.
+
+            <br />
+            <br />
+            Our vision is to give people real control over their private digital lives. Although many
+            projects already exist that have tried providing end-to-end encrypted cloud storage to their
+            users, these projects don't have a standard way of doing things, which means they can't
+            interoprate. Building such systems on top of an open protocol will allow more innovation
+            to happen that has not been previously possible.
+
+            <br />
+            <br />
+            If you are a developer, please join our Matrix server or checkout the protocol specification
+            on GitHub to contribute. You can also send us sats (Bitcoin) to help us develop the apps
+            and tools using Hengdang.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Start Using -->
-    <section class="container mx-auto px-4 mt-32">
+    <!-- <section class="container mx-auto px-4 mt-32">
       <div class="max-w-7xl mx-auto">
         <h2 class="text-4xl text-accent text-center mb-16">start using hengdang</h2>
         <div class="relative">
@@ -293,7 +275,7 @@
           </button>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Community -->
     <section class="mt-32 border-t border-white/20">
@@ -301,26 +283,16 @@
         <div class="max-w-7xl mx-auto">
           <div class="flex items-center justify-center gap-2 mb-8">
             <p class="text-xl">ready to take action?</p>
-            <img src="/assets/icons/discord.svg" alt="Discord" class="w-8 h-8" />
+            <img src="/assets/matrix.png" alt="Matrix" class="h-8" />
           </div>
-          <h2 class="text-5xl md:text-7xl mb-8 flex items-center justify-center">
+          <a
+            class="text-5xl md:text-7xl mb-8 flex items-center justify-center hover:underline"
+            href="https://matrix.to/#/#hengdang:matrix.org"
+            target="_blank"
+          >
             join our community
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              class="ml-4"
-            >
-              <path
-                d="M7 17l10-10M17 17V7H7"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </h2>
+            <img src="/assets/pointer.svg" alt="Pointer Icon" class="ml-4 w-8 h-8" />
+          </a>
         </div>
       </div>
     </section>
@@ -334,9 +306,14 @@
             <div class="flex-1">
               <h3 class="text-xl font-medium text-accent mb-6">Organization</h3>
               <div class="flex items-start gap-4 mb-6">
-                <img src="/assets/logo-large.svg" alt="Unsigned Labs Logo" class="h-10 w-10" />
+                <img src="/assets/unsigned.png" alt="Unsigned Labs Logo" class="h-10 w-10" />
                 <div>
-                  <h4 class="text-lg font-medium mb-2">Unsigned Labs</h4>
+                  <a
+                    class="text-lg font-medium mb-2 hover:pointer hover:underline"
+                    href="https://unsigned.in"
+                    target="_blank"
+                    >Unsigned Labs</a
+                  >
                   <p class="text-gray-300">
                     Building tools for digital self-sovereignty. Hengadang protocol is one of the
                     many things we are working on.
@@ -344,35 +321,37 @@
                 </div>
               </div>
             </div>
-            <button
+            <a
               class="w-full px-6 py-3 border border-white rounded-xl flex items-center justify-center gap-2 hover:bg-white/10 transition-colors"
+              href="https://nostr.at/npub12ucpp6c0g070cffu9z2c9rfsha5nnvzk8p8ze3ny3aqqj6k2aa8q0c52sm"
+              target="_blank"
             >
-              <img src="/assets/icons/nostr.svg" alt="Nostr" class="w-5 h-5" />
-              <span>Follow on Nostr</span>
-            </button>
+              <img src="/assets/nostr.png" alt="Nostr" class="w-5 h-5" />
+              <span>Follow us on Nostr</span>
+            </a>
           </div>
 
           <!-- Resources Section -->
           <div>
             <h3 class="text-xl font-medium text-accent mb-6">Resources</h3>
-            <ul class="space-y-4 text-gray-300">
+            <ul class="space-y-4 text-gray-300 list-disc ml-5">
               <li>
-                <a href="#" class="hover:text-accent transition-colors">Protocol Specification</a>
+                <a
+                  href="https://github.com/Hengdang-Protocol/spec"
+                  target="_blank"
+                  class="hover:text-accent transition-colors"
+                  >Protocol Specification</a
+                >
               </li>
+            </ul>
+            <ul class="space-y-4 text-gray-300 list-disc ml-5">
               <li>
-                <a href="#" class="hover:text-accent transition-colors">Documentation</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-accent transition-colors">Desktop Apps</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-accent transition-colors">Mobile Apps</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-accent transition-colors">Web Client</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-accent transition-colors">GitHub</a>
+                <a
+                  href="https://matrix.to/#/@hengdang:matrix.org"
+                  target="_blank"
+                  class="hover:text-accent transition-colors"
+                  >Matrix Server for discussions</a
+                >
               </li>
             </ul>
           </div>
@@ -386,8 +365,10 @@
                 independent and growing.
               </p>
             </div>
-            <button
+            <a
               class="w-full px-6 py-3 bg-[#F7931A] text-white rounded-xl flex items-center justify-center gap-2 hover:bg-[#F7931A]/90 transition-colors"
+              href="https://geyser.fund/project/hengdang"
+              target="_blank"
             >
               <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -395,7 +376,7 @@
                 />
               </svg>
               <span class="text-white font-medium">Support us with Bitcoin</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
